@@ -3,12 +3,15 @@
  */
 package dsa;
 
+import java.util.logging.Logger;
+
 public class App {
+    static Logger log = Logger.getLogger(App.class.getName());
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        log.info(new App().getGreeting());
     }
 }

@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'DSA'
-include('app')
+include('arrays_and_strings')
