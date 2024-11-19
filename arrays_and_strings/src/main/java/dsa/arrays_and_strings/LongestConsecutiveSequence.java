@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LongestConsecutiveSequence {
-    static Logger logger = Logger.getLogger(MaxProductSubArray.class.getName());
+    static Logger logger = Logger.getLogger(LongestConsecutiveSequence.class.getName());
 
     static {
         logger.setLevel(Level.ALL);
