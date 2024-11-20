@@ -5,19 +5,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LongestConsecutiveSequence {
     static Logger logger = Logger.getLogger(LongestConsecutiveSequence.class.getName());
-
-    static {
-        logger.setLevel(Level.ALL);
-        ConsoleHandler handler = new ConsoleHandler();
-        handler.setLevel(Level.ALL);
-        logger.addHandler(handler);
-    }
 
     public int findLongestConsecutiveSequence(int[] input) {
         if (input == null || input.length == 0) {
