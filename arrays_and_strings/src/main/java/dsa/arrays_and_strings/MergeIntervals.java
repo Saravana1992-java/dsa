@@ -11,13 +11,6 @@ public class MergeIntervals {
 
     static Logger logger = Logger.getLogger(MergeIntervals.class.getName());
 
-    static {
-        logger.setLevel(Level.ALL);
-        ConsoleHandler handler = new ConsoleHandler();
-        handler.setLevel(Level.ALL);
-        logger.addHandler(handler);
-    }
-
     public int[][] mergeIntervals(int[][] input) {
         if (input == null || input.length == 0) {
             throw new IllegalArgumentException("Not a valid Input.");

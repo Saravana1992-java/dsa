@@ -9,13 +9,6 @@ public class MaxProductSubArray {
 
     static Logger logger = Logger.getLogger(MaxProductSubArray.class.getName());
 
-    static {
-        logger.setLevel(Level.ALL);
-        ConsoleHandler handler = new ConsoleHandler();
-        handler.setLevel(Level.ALL);
-        logger.addHandler(handler);
-    }
-
     public int findMaxProductSubArray(int[] input) {
         int result = 0;
         if (input == null || input.length == 0) {
@@ -44,7 +37,6 @@ public class MaxProductSubArray {
             throw new IllegalArgumentException("Not a valid Input.");
         }
 
-        // { -2, -3, -4 }
         int maxSoFar = input[0];
         int minSoFar = input[0];
         int result = input[0];
